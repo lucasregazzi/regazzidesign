@@ -517,6 +517,7 @@ main li p {
     margin: 0;
     margin-bottom: 100px;
   }
+  main li.expand,
   main li:last-of-type {
     margin-bottom: 0px;
   }
