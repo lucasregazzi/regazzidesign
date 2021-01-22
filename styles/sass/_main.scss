@@ -9,6 +9,17 @@ a {
     transition-duration: .1s;
 }
 
+button.toggle,
+button.filter {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid;
+}
+
+button.filter:active,
+button.toggle:active,
 a:hover {
     background-color: yellow;
     color: red;
@@ -23,7 +34,7 @@ li video {
 }
 
 main {
-    padding: 50px;
+    padding: 25px;
     width: 80%;
 }
 
@@ -36,19 +47,9 @@ main li {
     list-style: none;
     width: calc(50% - 50px);
     flex-grow: 2;
-    margin-bottom: 100px;
+    margin: 25px;
     filter: grayscale(1);
     transition-duration: .1s;
-}
-
-main li:nth-of-type(2),
-main li:nth-of-type(4) {
-    margin-left: 50px;
-}
-
-main li:nth-of-type(3),
-main li:nth-of-type(4) {
-    margin-bottom: 0px;
 }
 
 main li h2 {
@@ -59,13 +60,17 @@ main li h2 {
 }
 
 h2 .case {
-    font-size: 1.1rem;
+    font-size: 1.21rem;
     text-transform: uppercase;
     padding: 7px 12px;
     border: 1px solid;
     border-radius: 100%;
     transform: rotate(1deg);
     transition-duration: .1s;
+}
+
+h2 .case::selection {
+    color: #000;
 }
 
 h2 .title {
@@ -91,7 +96,15 @@ main li p {
     margin-top: 25px;
 }
 
-@media (max-width: 1010px) {
+.expand {
+    width: 100%;
+}
+
+@media (max-width: 1040px) {
+    main {
+        padding: 50px;
+    }
+
     main ul {
         flex-direction: column;
         flex-wrap: wrap;
@@ -100,17 +113,13 @@ main li p {
     main li {
         max-width: 100%;
         width: 100%;
-    }
-
-    main li:nth-of-type(2),
-    main li:nth-of-type(4) {
-        margin-left: 0px;
-    }
-
-    main li:nth-of-type(3) {
+        margin: 0;
         margin-bottom: 100px;
     }
 
+    main li:last-of-type {
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width: 700px) {

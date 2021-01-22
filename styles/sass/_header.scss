@@ -24,7 +24,7 @@ h3 {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.98rem;
     font-weight: 700;
     letter-spacing: -.5px;
 }
@@ -36,7 +36,7 @@ header h1 {
 
 header p:first-of-type {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 2.2rem;
     animation: wave 1s forwards;
 }
 
@@ -62,16 +62,17 @@ header p:first-of-type {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.76rem;
     font-weight: 500;
     letter-spacing: -.5px;
 }
 
 h3,
-p {
+p,
+button {
     font-family: 'Jomolhari', serif;
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+    font-size: 1.54rem;
+    line-height: 2.34rem;
 }
 
 @media (max-width: 700px) {

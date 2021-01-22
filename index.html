@@ -28,40 +28,48 @@
         </header>
         <main>
             <ul>
-                <li>
+                <li class="UX graphic branding">
                     <h2><div class="case">Case Study</div><div class="title">The Art Gallery of Ontario</div></h2>
                     <img src="./assets/caseStudyAGOGif"/>
-                    <h3>Filed under <a href="/tagged/UX">UX</a>, <a href="/tagged/graphic">Graphic Design</a>, <a href="/tagged/branding">Branding</a>.</h3>
+                    <h3>Filed under <button class="filter UX">UX</button>, <button class="filter graphic">Graphic Design</button>, <button class="filter branding">Branding</button>.</h3>
                     <p>The Art Gallery of Ontario (AGO) is one of the longest standing art institutions in Canada. With a revitalized vision towards reframing what constitutes Canadian art, affecting new acquisitions, exhibitions and programming, a visual rebranding is opportune. Myself and my designer co-conspirator Elora Crawford present a new vision for a new decade: a modular, playful, and scalable design system for the AGO.</p>
-                    <p><a href="#moreAGO">More ↘︎</a></p>
+                    <p>
+                        <button class="toggle">More</button>
+                    </p>
                 </li>
-                <li>
+                <li class="visualID graphic webdev branding">
                     <h2><div class="case">Case Study</div><div class="title">Studio Plates</div></h2>
                     <video autoplay loop>
                         <source src="./assets/caseStudyStudioPlatesVid.mp4" type="video/mp4">
                     </video>
-                    <h3>Filed under <a href="/tagged/visual-identity">Visual Identity</a>, <a href="/tagged/graphic">Graphic Design</a>, <a href="/tagged/web-development">Web Development</a>, <a href="/tagged/branding">Branding</a>.</h3>
+                    <h3>Filed under <button class="filter visualID">Visual Identity</button>, <button class="filter graphic">Graphic Design</button>, <button class="filter webdev">Web Development</button>, <button class="filter branding">Branding</button>.</h3>
                     <p>Studio Plates was founded by Elora Crawford and Lucas Regazzi January 2021 as a collaborative exercise in graphic design
                     and identity branding from the perspectives of contemporary art, accessibility, playfulness and pedagogical methods.</p>
-                    <p><a href="#morePlates">More ↘︎</a></p>
+                    <p>
+                        <button class="toggle">More</button>
+                    </p>
                 </li>
-                <li>
+                <li class="webdev eCommerce">
                     <h2><div class="case">Case Study</div><div class="title">The Store Patch</div></h2>
                     <img src="./assets/caseStudyTheStorePatchGif.gif">
-                    <h3>Filed under <a href="/tagged/web-development">Web Development</a>, <a href="/tagged/eCommerce">eCommerce</a>.</h3>
+                    <h3>Filed under <button class="filter webdev">Web Development</button>, <button class="filter eCommerce">eCommerce</button>.</h3>
                     <p>The store Patch is a place to play with the possibilities of clothing and personal objects—a placeholder for the hope
                     that what we wear and how we wear it might mean more to us. Clothing is a costume and a material ode, a hold that holds.
                     Too, it is overly abundant.</p>
-                    <p><a href="#morePatch">More ↘︎</a></p>
+                    <p>
+                        <button class="toggle">More</button>
+                    </p>
                 </li>
-                <li>
+                <li class="UX visualID webdev product">
                     <h2><div class="case">Case Study</div><div class="title">Austin Doughs</div></h2>
                     <img src="./assets/caseStudyAustinDoughs.jpg">
-                    <h3>Filed under <a href="/tagged/UX">UX</a>,<a href="/tagged/visual-identity">Visual Identity</a>, <a href="/tagged/web-development">Web Development</a>, <a href="/tagged/product-design">Product Design</a>.</h3>
+                    <h3>Filed under <button class="filter UX">UX</button>,<button class="filter visualID">Visual Identity</button>, <button class="filter webdev">Web Development</button>, <button class="filter product">Product Design</button>.</h3>
                     <p>For whatever reason, I’ve made three kinds of jams the past week or so (raspberry, blueberry, and even a kumquat
                     marmalade!) and I had some leftover egg whites, so I tried to make a meringue for the first time. These French meringue
                     cookies swirled with jam and certainly sweet, with some nice subtle tartness from the jams.</p>
-                    <p><a href="#moreDoughs">More ↘︎</a></p>
+                    <p>
+                        <button class="toggle">More</button>
+                    </p>
                 </li>
             </ul>
         </main>
@@ -76,7 +84,10 @@
             <li><a href="CV"><i class="cv">C.V.</i></a></li>
         </ul>
     </footer>
-<!-- Internal Scripts -->
-<script src="./scripts/index.js"></script>
+    <!-- jQuery -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <!-- Internal Scripts -->
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
