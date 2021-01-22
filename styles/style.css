@@ -256,6 +256,11 @@ header {
   padding: 50px;
   width: 20%;
   min-width: 280px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 ul,
