@@ -420,6 +420,10 @@ li {
       -ms-flex-positive: 2;
           flex-grow: 2;
   margin-bottom: 100px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
 }
 
 li:nth-of-type(2),
@@ -456,9 +460,14 @@ h2 .title {
   border-bottom: 1px solid transparent;
 }
 
+li:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
 li:hover h2 .case {
   border: 1px solid #000;
-  background-color: #000;
+  background-color: red;
   color: #fff;
 }
 
