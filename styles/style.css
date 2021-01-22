@@ -246,6 +246,14 @@ h4 {
   font-weight: normal;
 }
 
+::-moz-selection {
+  background-color: yellow;
+}
+
+::selection {
+  background-color: yellow;
+}
+
 body {
   background-color: #dcdcdc;
 }
@@ -362,6 +370,7 @@ p {
   header {
     width: 100%;
     margin-bottom: 0px;
+    position: relative;
   }
 }
 
