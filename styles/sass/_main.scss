@@ -7,6 +7,12 @@ a {
     text-decoration: none;
     border-bottom: 1px solid;
     transition-duration: .1s;
+    cursor: pointer;
+}
+
+a,
+button {
+    cursor: pointer;
 }
 
 button.toggle,

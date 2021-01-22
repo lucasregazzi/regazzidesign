@@ -387,6 +387,12 @@ a {
   border-bottom: 1px solid;
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
+  cursor: pointer;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 button.toggle,
