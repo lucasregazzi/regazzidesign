@@ -3,8 +3,8 @@ regazziDesign = {}
 regazziDesign.buttonClick = () => {
     $('button.toggle').click(function(){
         let toggleButton = $(this);
-        let access = toggleButton[Object.keys(toggleButton)[0]];
-        let parentElement = access.offsetParent;
+        let access = $(toggleButton[Object.keys(toggleButton)[0]]);
+        let parentElement = $($(access).parent()).parent();
         $(parentElement).toggleClass('expand');
         $('main ul li').not(parentElement).toggle();
         $(toggleButton).toggleClass('expanded');
