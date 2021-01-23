@@ -1,0 +1,35 @@
+aside {
+    font-family: 'Jomolhari', serif;
+    margin-bottom: 100px;
+    padding: 25px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 1040px) {
+    aside {
+        padding: 0px;
+    }
+}
+
+aside h2 {
+    display: inline;
+    letter-spacing: normal;
+    font-size: 2.4rem;
+    line-height: 3.7rem;
+    text-decoration: underline solid #ccc;
+}
+
+@media (max-width: 600px) {
+    aside h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+aside h2::selection {
+    background-color: rgb(255, 255, 152);
+}

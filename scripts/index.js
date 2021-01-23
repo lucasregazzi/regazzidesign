@@ -14,6 +14,14 @@ regazziDesign.buttonClick = () => {
             toggleButton.html('More')
         }
     })
+    $('button.about').click(function () {
+        $('aside').toggleClass('show')
+        if ($('aside').hasClass('show')) {
+            $(this).html('Close')
+        } else if (!$('aside').hasClass('show')) {
+            $(this).html('About me')
+        }
+    })
 }
 
 regazziDesign.init = () => {

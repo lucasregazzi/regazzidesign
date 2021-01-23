@@ -75,6 +75,18 @@ button {
     line-height: 2.34rem;
 }
 
+button.about {
+    background: none;
+    border: none;
+    padding: 0;
+    padding-bottom: 1px;
+    margin: 0;
+    border-bottom: 1px solid;
+    display: block;
+    width: auto;
+    cursor: pointer;
+}
+
 @media (max-width: 700px) {
     header {
         width: 100%;
