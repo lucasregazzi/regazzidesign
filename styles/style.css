@@ -535,6 +535,7 @@ li.expand img.thumb {
 
 .set img {
   width: calc(50% - 10px);
+  height: auto;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -544,11 +545,15 @@ li.expand img.thumb {
   margin-left: 20px;
 }
 
-p.caption {
+figcaption {
   font-size: .8em;
   opacity: .7;
   margin-top: 10px;
-  text-align: center;
+  margin-bottom: 25px;
+}
+
+p.inter {
+  margin-bottom: 25px;
 }
 
 p.last {
