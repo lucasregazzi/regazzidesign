@@ -500,6 +500,55 @@ main li {
           transition-duration: .1s;
 }
 
+li .details {
+  display: none;
+}
+
+li .details h2 {
+  margin-top: 25px;
+}
+
+li.expand .details {
+  display: block;
+}
+
+li.expand h3,
+li.expand p.initial,
+li.expand img.thumb {
+  display: none;
+}
+
+.set {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.set img {
+  width: calc(50% - 10px);
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.set img:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+p.caption {
+  font-size: .8em;
+  opacity: .7;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p.last {
+  margin-bottom: 50px;
+}
+
 main li h2 {
   margin-bottom: 25px;
   display: -webkit-box;
