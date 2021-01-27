@@ -59,6 +59,10 @@ main li {
     transition-duration: .1s;
 }
 
+main li.expand {
+    filter: grayscale(0);
+}
+
 li .details {
     display: none;
 }
@@ -91,7 +95,12 @@ li.expand img.thumb {
     flex-grow: 2;
 }
 
-.set img:nth-of-type(2) {
+.three img {
+    width: calc(33.33% - 20px);
+}
+
+.set img:nth-of-type(2),
+.set img:nth-of-type(3) {
     margin-left: 20px;
 }
 
@@ -139,13 +148,15 @@ li:hover {
     filter: grayscale(0);
 }
 
-main li:hover h2 .case {
+main li:hover h2 .case,
+main li.expand h2 .case {
     border: 1px solid #000;
     background-color: red;
     color: #fff;
 }
 
-main li:hover h2 .title {
+main li:hover h2 .title,
+main li.expand .title {
     border-bottom: 1px solid #000;
 }
 
