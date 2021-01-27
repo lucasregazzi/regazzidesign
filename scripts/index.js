@@ -17,7 +17,7 @@ regazziDesign.buttonClick = () => {
     $('button.about').click(function () {
         $('aside').toggleClass('show')
         if ($('aside').hasClass('show')) {
-            $(this).html('Close')
+            $(this).html('Close');
         } else if (!$('aside').hasClass('show')) {
             $(this).html('About me')
         }
