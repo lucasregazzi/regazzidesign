@@ -24,7 +24,14 @@ regazziDesign.buttonClick = () => {
     })
 }
 
+regazziDesign.fadeInOnLoad = () => {
+    $('header').fadeIn('500');
+    $('footer').fadeIn('700');
+    $('main').fadeIn('1000');
+}
+
 regazziDesign.init = () => {
+    regazziDesign.fadeInOnLoad();
     regazziDesign.buttonClick();
 }
 

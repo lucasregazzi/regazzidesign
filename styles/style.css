@@ -723,3 +723,7 @@ footer li {
     position: relative;
   }
 }
+
+main, header, footer {
+  display: none;
+}
