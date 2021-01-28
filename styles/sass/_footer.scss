@@ -38,6 +38,14 @@ footer li {
     }
 }
 
-main, header, footer {
-    display: none;
+body {
+    opacity: 0;
+}
+
+body {
+    transition-duration: 1s;
+}
+
+.appear {
+    opacity: 1;
 }

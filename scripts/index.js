@@ -25,9 +25,10 @@ regazziDesign.buttonClick = () => {
 }
 
 regazziDesign.fadeInOnLoad = () => {
-    $('header').fadeIn('500');
-    $('footer').fadeIn('700');
-    $('main').fadeIn('1000');
+    $('main').imagesLoaded()
+        .done(function (instance) {
+            $('body').addClass('appear');
+        })
 }
 
 regazziDesign.init = () => {

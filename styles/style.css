@@ -724,6 +724,15 @@ footer li {
   }
 }
 
-main, header, footer {
-  display: none;
+body {
+  opacity: 0;
+}
+
+body {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.appear {
+  opacity: 1;
 }
